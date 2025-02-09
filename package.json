@@ -23,14 +23,18 @@
     "@phosphor-icons/web": "^2.1.1",
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
+    "mermaid": "^11.4.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3",
+    "reveal.js": "^5.1.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "^3.7.0",
     "@docusaurus/types": "^3.7.0",
+    "@types/reveal.js": "^5.0.5",
     "prettier-plugin-organize-imports": "^4.1.0",
     "typescript": "^5.7.3"
   },

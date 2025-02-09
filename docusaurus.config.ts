@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import { themes } from "prism-react-renderer";
 
 const config: Config = {
-  title: "DevOps",
+  title: "DOP",
   tagline: "Cours de DevOps à la HEIG-VD",
   favicon: "img/favicon.ico",
 
@@ -39,7 +39,7 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "DevOps",
+      title: "DOP",
       logo: {
         alt: "Logo",
         src: "img/logo.svg",
