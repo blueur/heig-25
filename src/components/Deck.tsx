@@ -68,7 +68,7 @@ export function Columns(
 export function Image(props: {
   fragment?: boolean;
   src: string;
-  url?: string;
+  url: string;
   height?: string;
   width?: string;
 }) {
@@ -86,12 +86,19 @@ export function Image(props: {
     <p
       key={1}
       style={{
-        fontSize: "xx-small",
+        fontSize: "small",
         lineHeight: 1,
         marginBottom: "1em",
+        wordBreak: "break-all",
       }}
     >
-      <a className="reference" href={props.url} target="_blank">
+      <a
+        style={{
+          color: "var(--ifm-color-gray)",
+        }}
+        href={props.url}
+        target="_blank"
+      >
         {props.url}
       </a>
     </p>,
