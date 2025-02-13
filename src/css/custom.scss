@@ -125,6 +125,7 @@ div.reveal {
 
     svg {
       max-width: unset !important;
+      max-height: calc(var(--slide-height) - 4em);
     }
   }
   .slide-number {

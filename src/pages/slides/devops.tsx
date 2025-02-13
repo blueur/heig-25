@@ -1,10 +1,7 @@
 import { Image, List, ListItem, Section } from "@site/src/components/Deck";
 import RevealDeck from "@site/src/components/RevealDeck";
 
-export default function Devops(props: {
-  embedded?: boolean;
-  chapter?: string;
-}) {
+export default function Devops(props: { embedded?: boolean }) {
   return (
     <RevealDeck
       embedded={props.embedded}

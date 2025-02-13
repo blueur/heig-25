@@ -16,25 +16,24 @@ export default function Introduction(props: { embedded?: boolean }) {
           timeline
             Gymnase d'Yverdon
             EPFL : BSc & MSc en Informatique
-            Ingénieur informaticien : ELCA (CFF, transN, TPF, BCV) : EPFL
+            Ingénieur informaticien : ELCA (CFF, transN, TPF, RhB, SECUTIX, BCV) : EPFL (ENAC-IT4R)
             Enseignant : Gymnase Provence : HEIG-VD : Gymnase pour Adultes : HEP Vaud
           `}
         </Mermaid>
       </Section>
-      <Section level={2} title="Évaluation">
+      <Section level={2} title="Organisation">
         <List
+          fragment
           items={[
-            "1 **examen** écrit : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _50%_",
-            "2 **tests** continus : &nbsp;&nbsp;&nbsp; _30%_",
-            "3 **laboratoires** notés : _20%_",
-          ]}
-        />
-      </Section>
-      <Section level={2} title="Prise de notes">
-        <List
-          items={[
-            "**Supports** mis à disposition",
-            "Prendre des notes pour **compléter** les diapositives",
+            ["Cours & Laboratoires", ["**Vendredi** de 13h15 à 16h30"]],
+            [
+              "Évaluation",
+              [
+                "1 **examen** écrit : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _50%_",
+                "2 **tests** continus : &nbsp;&nbsp;&nbsp; _30%_",
+                "3 **laboratoires** notés : _20%_",
+              ],
+            ],
           ]}
         />
       </Section>
@@ -67,7 +66,10 @@ export default function Introduction(props: { embedded?: boolean }) {
             ],
             [
               "[Cyberlearn](https://cyberlearn.hes-so.ch/course/view.php?id=30801)",
-              ["DevOps 2024-2025 printemps"],
+              [
+                "DevOps 2024-2025 printemps",
+                "**Forum** (questions, réponses, annonces)",
+              ],
             ],
           ]}
         />
