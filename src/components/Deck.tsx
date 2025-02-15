@@ -77,7 +77,7 @@ export function Image(props: {
       key={0}
       className={clsx({ fragment: props.fragment })}
       style={{
-        width: props.width ?? "100%",
+        width: props.width ?? (props.height ? undefined : "100%"),
         height: props.height ?? "750px",
         objectFit: "contain",
       }}
@@ -186,7 +186,6 @@ export function Table(props: {
       data-fragment-index={
         typeof props.fragment === "number" ? props.fragment : undefined
       }
-      style={{ width: "unset" }}
     >
       {props.headers ? (
         <thead>

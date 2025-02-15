@@ -76,6 +76,8 @@ div.reveal {
     padding: inherit;
 
     code {
+      max-height: unset;
+
       table {
         table-layout: auto;
         border-bottom: unset;

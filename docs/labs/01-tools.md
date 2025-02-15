@@ -19,16 +19,16 @@
 
 ### Estimer son travail
 
-- Estimer le temps nécessaire pour réaliser ce laboratoire
-  - Découper le travail en tâches pour faciliter l'estimation
-- Lorsque le laboratoire est terminé, comparer le temps estimé avec le temps réellement passé
-- Le but n'étant pas d'estimer correctement, mais comprendre comment améliorer ses estimations
+- Estimer le temps nécessaire pour réaliser ce travail dans le rapport.
+  - Découper le travail en tâches pour faciliter l'estimation.
+- Une fois terminé, comparer le temps estimé avec le temps réellement passé.
+- Le but n'est pas d'estimer correctement, mais de comprendre comment améliorer ses estimations.
 
-| Tâche      | Temps estimé | Temps réel | Commentaire |
-| ---------- | ------------ | ---------- | ----------- |
-| Estimation | 10m          | 15m        | ...         |
-| ...        | ...          | ...        | ...         |
-| Total      | 2h           | 1h30       | ...         |
+| Tâche      | Temps estimé | Temps passé | Commentaire |
+| ---------- | ------------ | ----------- | ----------- |
+| Estimation | 10m          | 15m         | ...         |
+| ...        | ...          | ...         | ...         |
+| Total      | 2h           | 1h30        | ...         |
 
 ### Environnement de travail
 
