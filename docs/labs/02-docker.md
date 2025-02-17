@@ -31,61 +31,77 @@
 
 ### Git
 
-- Reprendre son projet sur GitLab du laboratoire précédent (HEIG-VD DevOps)
-- Mettre tout son travail sur une branche `feature/02-docker` et faites une merge request (MR) sur `main`
-- Séparer son travail en commits cohérents avec des messages de commit clairs et concis
+- Reprendre son projet GitLab du laboratoire précédent (HEIG-VD DevOps).
+- Travailler sur une nouvelle branche `feature/02-docker` (à partir de `feature/01-tools` en attendant qu'elle soit merge sur `main`).
+  - Faire une merge request (MR) sur `main` une fois terminé.
+  - Une fois qu'une MR est acceptée, la merge sur `main`.
+- Séparer son travail en commits cohérents avec des messages de commit clairs et concis.
 
 ### Docker
 
-- Dockeriser les deux applications `frontend` et `backend` du précédent laboratoire
-  - On doit pouvoir construire et démarrer les deux applications depuis leur dossier respectif
-  - Regarder dans les documentations officielles des frameworks pour trouver des exemples de Dockerfile
-  - Suivre les bonnes pratiques pour les Dockerfiles
+- Dockeriser les deux applications `frontend` et `backend` du précédent laboratoire.
+  - On doit pouvoir construire et démarrer les deux applications depuis leur dossier respectif.
+  - Regarder dans les documentations officielles des frameworks pour trouver des exemples de Dockerfile.
+  - Suivre les bonnes pratiques pour les Dockerfiles.
     - Frontend
       - Utiliser [nginx](https://nginx.org/) comme serveur web
       - `docker build -t frontend . && docker run -p 80:80 frontend`
     - Backend
       - `docker build -t backend . && docker run -p 8080:80 backend`
   - Ne pas oublier les [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
-- Dans le rapport, justifier ses choix des Dockerfiles
+
+:::info[Question rapport]
+
+Justifier ses choix pour les Dockerfiles.
+
+:::
 
 ### Docker Compose
 
-- Créer un `compose.yml` pour démarrer les deux applications
-  - Depuis la racine du projet, on doit pouvoir
-    - construire les deux applications avec `docker compose build`
-    - démarrer les deux applications avec `docker compose up`
-    - accéder à l'application frontend sur le port 80
-    - accéder à l'application backend sur le port 8080
-    - arrêter les deux applications avec `docker compose down`
-- Ajouter un service `database`
-  - Utiliser une base de données PostgreSQL
-  - Utiliser les crédentials suivants:
-    - user: postgres
-    - password: postgres
-    - database: postgres
-  - Exposer le port 5432
-  - Ajouter un volume pour persister les données (on doit pouvoir supprimer le conteneur `docker compose rm` et le recréer sans perdre les données)
-  - Vous pouvez utiliser [DBeaver](https://dbeaver.io/) pour visualiser les données
+- Créer un `compose.yml` pour démarrer les deux applications.
+  - Depuis la racine du projet, on doit pouvoir :
+    - construire les deux applications avec `docker compose build`.
+    - démarrer les deux applications avec `docker compose up`.
+    - accéder à l'application frontend sur le port 80.
+    - accéder à l'application backend sur le port 8080.
+    - arrêter les deux applications avec `docker compose down`.
+- Ajouter un service `database`.
+  - Utiliser une base de données PostgreSQL.
+  - Utiliser les credentials suivants :
+    - user : `postgres`
+    - password : `postgres`
+    - database : `postgres`
+  - Exposer le port `5432`
+  - Ajouter un volume pour persister les données (on doit pouvoir supprimer les conteneurs `docker compose rm` et les recréer sans perdre les données).
+  - Possibilité d'utiliser [DBeaver](https://dbeaver.io/) pour visualiser les données.
 - Indiquer les dépendances entre les services
-- Dans le rapport, justifier ses choix pour le docker compose et la database
+
+:::info[Question rapport]
+
+Justifier ses choix pour le Docker Compose et la base de données.
+
+:::
 
 ## Evaluation
 
-### Critères de réussite
+L'évaluation se porte sur les critères suivants :
 
-Pour atteindre le 4 :
+- Rapport
+  - [ ] **Le rapport est complet.**
+  - [ ] _Le rapport est bien structuré et synthétique._
+  - [ ] _Les choix techniques sont bien justifiés._
+- Fonctionnalités
+  - [ ] **Le Docker Compose est fonctionnel.**
+  - [ ] **Toutes les fonctionnalités sont présentes (persistance, dockerignore, dépendances, &hellip;).**
+  - [ ] _Les bonnes pratiques sont appliquées pour Docker._
+  - [ ] _Les bonnes pratiques sont appliquées pour Docker Compose._
+- Organisation
+  - [ ] **La Merge Request est correctement créée et dans les temps.**
+  - [ ] _Les commits sont cohérents et bien organisés._
 
-- Le rapport est complet
-- Le rendu sur GitLab est correct et dans les temps
-- Le Docker Compose fonctionne (on peut démarrer les deux applications et la base de données)
+|            Note            | &nbsp;1&nbsp; | &nbsp;2&nbsp; | 2.5 | &nbsp;3&nbsp; | 3.5 | &nbsp;4&nbsp; | 4.5 | &nbsp;5&nbsp; | 5.5 | &nbsp;6&nbsp; |
+| :------------------------: | :-----------: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: |
+| Nombre de critères validés |       0       |       1       |  2  |       3       |  4  |       5       |  6  |       7       |  8  |       9       |
 
-### Critères d'amélioration
-
-Pour atteindre le 6 :
-
-- Bonne justification des choix techniques (utilisation des bonnes pratiques)
-- Lisibilité du code
-- Les commits sont cohérents et bien organisés
-- Persistance des données, dockerignore, dépendances des services, ...
-- Rédaction du rapport (concis, clair, bien structuré, ...)
+- **En gras** : critères principaux.
+- _En italique_ : critères secondaires.

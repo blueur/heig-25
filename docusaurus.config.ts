@@ -1,6 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes } from "prism-react-renderer";
+import type { Options } from "sass";
 
 const config: Config = {
   title: "DOP",
@@ -17,7 +18,17 @@ const config: Config = {
   future: {
     experimental_faster: true,
   },
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    [
+      "docusaurus-plugin-sass",
+      {
+        sassOptions: {
+          silenceDeprecations: ["import"],
+          quietDeps: true,
+        } satisfies Options<"sync">,
+      },
+    ],
+  ],
   presets: [
     [
       "classic",
