@@ -81,8 +81,8 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
 - Créer un projet privé sur GitLab.
   - Nom du projet : `HEIG-VD DevOps`.
   - Identifiant du projet (laisser par défaut) : `heig-vd-devops`.
-- Ajouter `blueur` comme membre du projet.
-  - Trouvez le bon [rôle](https://docs.gitlab.com/ee/user/permissions.html) qui permet voir tous les merge requests (MR) sans pouvoir pousser du code.
+- Ajouter `blueur` et `GeraudSilvestri` comme membre du projet.
+  - Trouvez le bon [rôle](https://docs.gitlab.com/ee/user/permissions.html) qui permet de mettre à jour les merge requests (MR) sans pouvoir changer les paramètres du projet.
 - Protéger la branche `main`.
   - Personne ne doit pouvoir pousser directement sur la branche.
   - Seuls les mainteneurs peuvent fusionner des MR.
@@ -120,7 +120,8 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
 - Créer un commit avec les changements et pousser la branche sur GitLab.
 - Créer une MR pour fusionner la branche feature dans `main`.
   - Lier la MR à l'issue `Rendu labo 01` (plusieurs façons possibles).
-  - Assigner la MR à soi-même.
+  - Assigner la MR à soi-même (assignee).
+  - Demander une revue de code à `blueur` et `GeraudSilvestri` (reviewer).
 - Essayer l'outils de suivi du temps de GitLab pour ses estimations.
   - `/estimate 2h` pour estimer le temps nécessaire pour la MR.
   - `/spend 1h30` pour indiquer le temps réellement passé.
