@@ -17,6 +17,11 @@
 
 ## Tâches
 
+### Comptes GitHub et GitLab
+
+- Commencer par indiquer ses pseudo [GitHub](https://github.com/) et [GitLab](https://gitlab.com/) sur [Cyberlearn](https://cyberlearn.hes-so.ch/mod/questionnaire/view.php?id=2421655).
+  - Créer les comptes si nécessaire et les lier à des adresses e-mail privées afin de ne pas perdre l'accès à la fin de la formation.
+
 ### Estimer son travail
 
 - Estimer le temps nécessaire pour réaliser ce travail dans le rapport.
@@ -76,11 +81,10 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
 
 ### GitLab
 
-- Créer un compte sur [GitLab](https://gitlab.com/) (si vous n'en avez pas déjà un).
-  - Lier à une adresse e-mail privée afin de ne pas perdre l'accès à la fin de la formation.
-- Créer un projet privé sur GitLab.
-  - Nom du projet : `HEIG-VD DevOps`.
-  - Identifiant du projet (laisser par défaut) : `heig-vd-devops`.
+- Créer un projet privé sur GitLab dans le groupe [DevOps 2024-2025 printemps](https://gitlab.com/heig-vd-dop/2425p)
+  - Depuis le groupe, cliquer sur `New project` > `Create blank project`.
+  - Nom du projet : `DOP Python Prénom` (avec votre prénom).
+  - Identifiant du projet (laisser par défaut) : `dop-python-prenom`.
 - Ajouter `blueur` et `GeraudSilvestri` comme membre du projet.
   - Trouvez le bon [rôle](https://docs.gitlab.com/ee/user/permissions.html) qui permet de mettre à jour les merge requests (MR) sans pouvoir changer les paramètres du projet.
 - Protéger la branche `main`.
