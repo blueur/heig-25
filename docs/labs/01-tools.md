@@ -81,10 +81,10 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
 
 ### GitLab
 
-- Créer un projet privé sur GitLab dans le groupe [DevOps 2024-2025 printemps](https://gitlab.com/heig-vd-dop/2425p)
+- Créer un projet privé sur GitLab dans votre groupe personnel.
   - Depuis le groupe, cliquer sur `New project` > `Create blank project`.
-  - Nom du projet : `DOP Python Prénom` (avec votre prénom).
-  - Identifiant du projet (laisser par défaut) : `dop-python-prenom`.
+  - Nom du projet : `DOP Python`.
+  - Identifiant du projet (laisser par défaut) : `dop-python`.
 - Ajouter `blueur` et `GeraudSilvestri` comme membre du projet.
   - Trouvez le bon [rôle](https://docs.gitlab.com/ee/user/permissions.html) qui permet de mettre à jour les merge requests (MR) sans pouvoir changer les paramètres du projet.
 - Protéger la branche `main`.
@@ -117,18 +117,22 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
     - Depuis le dossier `/backend`, installer [FastAPI](https://fastapi.tiangolo.com/).
       - https://fastapi.tiangolo.com/#installation
       - `poetry add fastapi uvicorn[standard]`
-      - Créer un fichier `main.py` dans `/backend/backend` avec le code ci-dessous.
-      - Tester le serveur de développement avec `poetry run uvicorn backend.main:app --reload`.
+      - S'il y a le dossier `/backend/backend` :
+        - Créer un fichier `main.py` dans `/backend/backend` avec le code ci-dessous.
+        - Tester le serveur de développement avec `poetry run uvicorn backend.main:app --reload`.
+      - S'il y a le dossier `/backend/src/backend` :
+        - Créer un fichier `main.py` dans `/backend/src/backend` avec le code ci-dessous.
+        - Tester le serveur de développement avec `poetry run uvicorn src.backend.main:app --reload`.
       - Voir la documentation de l'API à l'adresse http://127.0.0.1:8000/docs
     - Ajouter un fichier `.gitignore` adapté au projet.
 - Créer un commit avec les changements et pousser la branche sur GitLab.
 - Créer une MR pour fusionner la branche feature dans `main`.
   - Lier la MR à l'issue `Rendu labo 01` (plusieurs façons possibles).
   - Assigner la MR à soi-même (assignee).
-  - Demander une revue de code à `blueur` et `GeraudSilvestri` (reviewer).
+  - Demander une revue de code à `blueur` (reviewer).
 - Essayer l'outils de suivi du temps de GitLab pour ses estimations.
   - `/estimate 2h` pour estimer le temps nécessaire pour la MR.
-  - `/spend 1h30` pour indiquer le temps réellement passé.
+  - `/spend 1h30m` pour indiquer le temps réellement passé.
 
 ```python title="/backend/backend/main.py" showLineNumbers
 from typing import Union
@@ -150,7 +154,8 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 :::info[Question rapport]
 
-Quelles sont les bonnes pratiques pour les messages de commit?
+- Indiquer le lien vers la MR dans le rapport.
+- Quelles sont les bonnes pratiques pour les messages de commit?
 
 :::
 
