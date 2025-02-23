@@ -56,6 +56,12 @@ export default function Artifact(props: { embedded?: boolean }) {
           ]}
         />
       </Section>
+      <Section level={3} title="Dependency">
+        <Image
+          src="https://imgs.xkcd.com/comics/dependency.png"
+          url="https://xkcd.com/2347"
+        />
+      </Section>
       <Section level={4} title="Gestionnaire de paquets">
         <List
           fragment
@@ -96,6 +102,12 @@ export default function Artifact(props: { embedded?: boolean }) {
         <Image
           src="https://www.docker.com/app/uploads/2021/11/docker-containerized-and-vm-transparent-bg.png"
           url="https://www.docker.com/resources/what-container/"
+        />
+      </Section>
+      <Section level={3} title="Comment animer un dîner de codeurs">
+        <Image
+          src="https://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Discussion-Docker-650-final.jpg"
+          url="https://www.commitstrip.com/fr/2016/06/24/how-to-host-a-coder-dinner-party/"
         />
       </Section>
       <Section level={2} title="Conteneur">

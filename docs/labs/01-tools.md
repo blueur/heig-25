@@ -116,7 +116,7 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
     - Depuis la racine du répertoire, exécuter `poetry new backend`.
     - Depuis le dossier `/backend`, installer [FastAPI](https://fastapi.tiangolo.com/).
       - https://fastapi.tiangolo.com/#installation
-      - `poetry add fastapi uvicorn[standard]`
+      - `poetry add fastapi uvicorn[standard]` ou `poetry add fastapi "uvicorn[standard]"` (pour zsh).
       - S'il y a le dossier `/backend/backend` :
         - Créer un fichier `main.py` dans `/backend/backend` avec le code ci-dessous.
         - Tester le serveur de développement avec `poetry run uvicorn backend.main:app --reload`.
