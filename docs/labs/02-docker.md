@@ -33,7 +33,7 @@
 
 - Reprendre son projet GitLab du laboratoire précédent (DOP Python).
 - Travailler sur une nouvelle branche `feature/02-docker` (à partir de `feature/01-tools` en attendant qu'elle soit merge sur `main`).
-  - Faire une merge request (MR) sur `main` une fois terminé.
+  - Faire une merge request (MR) sur `main` une fois terminé et demander une revue.
   - Une fois qu'une MR est acceptée, la merge sur `main`.
 - Séparer son travail en commits cohérents avec des messages de commit clairs et concis.
 
