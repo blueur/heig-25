@@ -1,8 +1,8 @@
-# Artéfact
+# Artefact
 
 ## Objectifs
 
-- Comprendre la notion de paquet et d'artéfact
+- Comprendre la notion de paquet et d'artefact
 - Comprendre le fonctionnement d'un conteneur
 - Dockeriser une application
 
