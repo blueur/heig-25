@@ -37,7 +37,20 @@
   - Une fois qu'une MR est acceptée, la merge sur `main`.
 - Séparer son travail en commits cohérents avec des messages de commit clairs et concis.
 
+:::info[Question rapport]
+
+Indiquer le lien vers la MR dans le rapport.
+
+:::
+
 ### Docker
+
+:::info[Pour débuter avec Docker]
+
+- [Containerize an application](https://docs.docker.com/get-started/workshop/02_our_app/)
+- [Update the application](https://docs.docker.com/get-started/workshop/03_updating_app/)
+
+:::
 
 - Dockeriser les deux applications `frontend` et `backend` du précédent laboratoire.
   - On doit pouvoir construire et démarrer les deux applications depuis leur dossier respectif.
