@@ -1,4 +1,4 @@
-# Tools
+# 01 Tools
 
 ## GitLab
 
@@ -15,3 +15,15 @@
 - Regarder https://www.conventionalcommits.org/fr/v1.0.0/
 - Il manque le total du temps de travail estimé et/ou réel.
 - Il manque le rapport sur GitHub Classroom.
+
+# 02 Docker
+
+- Les dépendances de l'application ne doivent être qu'à un seul endroit (pour les futurs mise à jour).
+- Dockerignore ?
+- Fixer les versions mineurs des images Docker.
+- Pas besoin de Poetry dans l'image finale.
+- Il ne faut pas lancer en mode dev pour la prod.
+- Constance dans les messages de commit.
+- Dépendance entre les services Docker ?
+
+# 03 Compose

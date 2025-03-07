@@ -129,7 +129,7 @@ Installer et vérifier les outils suivants (mettre à jour si nécessaire):
 - Créer une MR pour fusionner la branche feature dans `main`.
   - Lier la MR à l'issue `Rendu labo 01` (plusieurs façons possibles).
   - Assigner la MR à soi-même (assignee).
-  - Demander une revue de code à `blueur` (reviewer).
+  - Demander une revue de code à `GeraudSilvestri` (reviewer).
 - Essayer l'outils de suivi du temps de GitLab pour ses estimations.
   - `/estimate 2h` pour estimer le temps nécessaire pour la MR.
   - `/spend 1h30m` pour indiquer le temps réellement passé.
