@@ -132,7 +132,7 @@ export default function CiCd(props: { embedded?: boolean }) {
             ],
             [
               "[GitHub Actions](https://github.com/features/actions)",
-              "Intégré à GitHub",
+              ["Intégré à GitHub"],
             ],
             [
               "[GitLab CI/CD](https://docs.gitlab.com/ee/ci/)",

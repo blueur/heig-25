@@ -60,7 +60,6 @@ export default function Test(props: { embedded?: boolean }) {
       </Section>
       <Section level={2} title="Types de tests">
         <List
-          fragment
           items={[
             "Tests **unitaires**",
             "Tests d'**intégration**",

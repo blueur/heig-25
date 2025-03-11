@@ -40,8 +40,8 @@ export default function Devops(props: { embedded?: boolean }) {
       </Section>
       <Section level={2} title="DevOps">
         <Image
-          src="https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png"
-          url="https://orangematter.solarwinds.com/2022/03/21/what-is-devops/"
+          src="https://miro.medium.com/v2/0*u6zi1ux8N6qDQTha.png"
+          url="https://basanagouda.medium.com/day-1-getting-started-with-devops-b78ccca0af8"
         />
       </Section>
       <Section level={2} title="CALMS">

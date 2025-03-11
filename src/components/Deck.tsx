@@ -78,7 +78,8 @@ export function Image(props: {
       className={clsx({ fragment: props.fragment })}
       style={{
         width: props.width ?? (props.height ? undefined : "100%"),
-        height: props.height ?? "750px",
+        height: props.height ?? "740px",
+        margin: 0,
         objectFit: "contain",
       }}
       src={props.src}
@@ -166,7 +167,7 @@ export function Section(
         {
           className: clsx({ fragment: props.fragment }),
         },
-        props.title,
+        <Text>{props.title}</Text>,
       )}
       {props.children}
     </section>
