@@ -27,3 +27,7 @@
 - Dépendance entre les services Docker ?
 
 # 03 Compose
+
+- Le Makefile doit être juste un raccourci des commandes.
+- Les variables d'environnements sont à mettre dans un fichier .env.
+- Les données de connection à la base de données ne doivent pas être en dur dans le back
