@@ -369,7 +369,7 @@ deploy-backend:
   </div>
 </details>
 
-- Ne pas effectuer le stage `deploy` uniquement sur la branche `main`.
+- Effectuer le stage `deploy` uniquement sur la branche `main`.
   - [rules](https://docs.gitlab.com/ee/ci/yaml/#rules)
 - Transformer votre pipeline en [Directed Acyclic Graph Pipelines](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#directed-acyclic-graph-pipelines).
 - Transformer votre pipeline en [Parent-child pipelines](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#parent-child-pipelines).
