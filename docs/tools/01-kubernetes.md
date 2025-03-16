@@ -1,5 +1,11 @@
 # Kubernetes
 
+:::danger[Work in progress]
+
+Le cluster du cours n'est pas encore prêt.
+
+:::
+
 ## Cluster du cours
 
 Il faut être sur le réseau de l'HEIG-VD pour accéder au cluster Kubernetes du cours.  

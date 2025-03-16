@@ -310,6 +310,7 @@ export default function Orchestration(props: { embedded?: boolean }) {
         <Image
           src="https://i0.wp.com/belowthemalt.com/wp-content/uploads/2022/04/image-5.png"
           url="https://belowthemalt.com/2022/04/09/kubernetes-namespaces/"
+          height="500px"
         />
         <List
           fragment
