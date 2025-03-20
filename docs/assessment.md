@@ -7,15 +7,15 @@ sidebar_position: 1
 L'évaluation de 60 minutes se portera sur les critères suivants :
 
 - DevOps
-  - [ ] Expliquer le DevOps et le CALMS.
+  - [ ] Expliquer le DevOps et l'agile.
 - Code
   - [ ] Expliquer les bonnes pratiques pour gérer du code.
 - Artefact
-  - [ ] Expliquer un artefact.
-  - [ ] Repérer les erreurs et améliorations dans un Dockerfile.
-  - [ ] Appliquer les bonnes pratiques dans un Dockerfile.
+  - [ ] Expliquer l'artefact.
+  - [ ] Corriger un Dockerfile.
+  - [ ] Améliorer un Dockerfile.
 - Développement
-  - [ ] Appliquer l'application 12 facteurs.
+  - [ ] Appliquer le twelve factors app.
   - [ ] Expliquer le Docker Compose.
 - Test automatisé
   - [ ] Différencier les types de tests.

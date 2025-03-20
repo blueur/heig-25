@@ -5,7 +5,7 @@
 |   2025-03-07    |   03    | [Test automatisé](/docs/lessons/test)                                                            | [Compose](/docs/labs/compose)                                  |
 |   2025-03-14    |   04    | [CI/CD](/docs/lessons/ci-cd)                                                                     | [CI/CD](/docs/labs/cicd)                                       |
 |   2025-03-21    |   05    | [Orchestration](/docs/lessons/orchestration)                                                     | [CI/CD](/docs/labs/cicd) + [Kubernetes](/docs/labs/kubernetes) |
-|   2025-03-28    |   06    | [Contrôle continu](/docs/check) (**noté**)                                                       | [Kubernetes](/docs/labs/kubernetes)                            |
+|   2025-03-28    |   06    | [Contrôle continu](/docs/assessment) (**noté**)                                                  | [Kubernetes](/docs/labs/kubernetes)                            |
 |   2025-04-04    |   07    | [Déploiement](/docs/lessons/deployment)                                                          | [CI/CD Java](/docs/labs/cicd-java) (**noté**)                  |
 |   2025-04-11    |   08    | [GitOps](/docs/lessons/gitops)                                                                   | [Helm](/docs/labs/helm)                                        |
 |   2025-04-18    |   09    | _Vendredi saint_                                                                                 | _Vendredi saint_                                               |
