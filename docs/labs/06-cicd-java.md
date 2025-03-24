@@ -1,1 +1,82 @@
 # CI/CD Java
+
+## Objectifs
+
+- Estimer son travail
+- Dockeriser une application Java
+- Configurer une pipeline CI/CD pour une application Java
+- Configurer un déploiement sur Kubernetes pour une application Java
+
+## Rendu
+
+- Rapport individuel en Markdown à rendre avant le prochain cours
+  - GitHub Classroom : https://classroom.github.com/a/5QPDBsHu
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Avec le lien vers la Merge Request GitLab
+- Délai: 1 semaine
+- **Laboratoire noté**
+
+## Tâches
+
+### Estimer son travail
+
+- Estimer le temps nécessaire pour réaliser ce travail.
+  - Découper le travail en tâches pour faciliter l'estimation.
+- Une fois terminé, comparer le temps estimé avec le temps réellement passé.
+
+| Tâche      | Temps estimé | Temps passé | Commentaire |
+| ---------- | ------------ | ----------- | ----------- |
+| Estimation | 10m          | 15m         | ...         |
+| ...        | ...          | ...         | ...         |
+| Total      | 2h           | 1h30        | ...         |
+
+### Prérequis
+
+- [Maven](https://maven.apache.org/)
+- [Java 17](https://adoptium.net/fr/temurin/releases/?version=17)
+
+### Préparation
+
+- Fork le repository suivant : https://gitlab.com/blueur/heig-vd-devops-java
+  - Renommer le projet en `dop-java`.
+- Cloner votre repository sur votre machine.
+- Empaqueter l'application avec Maven : `mvn package`
+- Lancer l'application : `mvn spring-boot:run`
+  - L'application est accessible sur http://127.0.0.1:8080/
+
+### Application des principes DevOps
+
+- Conteneuriser l'application avec Docker.
+  - Quelle image de base ? Pourquoi ?
+  - Utiliser la version 17 de Java.
+- Configurer Docker Compose de sorte que `docker compose up` lance l'application.
+- Configurer la CI/CD sur GitLab.
+  - Pour chaque commit sur n'importe quelle branche :
+    - Vérifier que le projet compile.
+    - Vérifier que les tests passent.
+      - Avec les [Unit Test Reports](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html)
+  - Pour chaque merge request :
+    - Vérifier que l'image Docker se construit.
+  - Pour chaque commit sur `main` :
+    - Mettre à jour l'image Docker sur le registry GitLab avec le tag `latest`.
+- Configurer un déploiement sur Kubernetes : `kubectl apply -f deployment.yaml` doit lancer l'application sur un cluster Kubernetes.
+
+### Rapport
+
+- Indiquer dans votre rapport votre démarche ainsi que les difficultés rencontrées.
+- Expliquer tous les choix techniques que vous avez fait (sauf ceux indiqués).
+
+## Evaluation
+
+| Critère    | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.15)                                                             | Excellent (+0.3)                     |
+| ---------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------ |
+| Délai      | Le rendu est dans les temps                                                                     |                                                                         |                                      |
+| Rapport    | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                |                                      |
+| Docker     | Le Docker Compose est fonctionnel avec `docker compose up`                                      | Application des bonnes pratiques                                        | Optimisation                         |
+| CI/CD      | La pipeline CI/CD est fonctionnel (succès)                                                      | Conditions correctes                                                    | Application des bonnes pratiques     |
+| Kubernetes | Le déploiement sur Kubernetes est fonctionnel grâce au fichier `deployment.yaml` (pas d'erreur) | Déployé sur le cluster k8s de la classe sous le namespace `{votre nom}` | Application des bonnes pratiques     |
+| Code       | Le code est fonctionnel                                                                         | Le code est propre                                                      | Le code est propre et bien documenté |
+| Test       |                                                                                                 | Amélioration de la CI/CD avec l'unit test report                        | Explication de son utilisation       |
+| Coverage   |                                                                                                 | Amélioration de la CI/CD avec le code coverage                          | Explication de son utilisation       |
+| SAST       |                                                                                                 | Amélioration de la CI/CD avec le SAST                                   | Explication de son utilisation       |
+| Bonus      |                                                                                                 | Toute autre amélioration                                                | Toute autre amélioration avancée     |

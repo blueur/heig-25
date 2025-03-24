@@ -11,6 +11,7 @@
 - Rapport individuel en [Markdown](https://fr.wikipedia.org/wiki/Markdown) à rendre avant le prochain cours
   - GitHub Classroom : https://classroom.github.com/a/9GFgSJJf
   - Nom du fichier : `report.md` à la racine du répertoire
+  - Avec le lien vers la Merge Request GitLab
 - Présentation individuelle à rendre sur Cyberlearn
   - Nom du fichier : `presentation-prenom-nom.pdf`
 - Délai: 1 semaine
