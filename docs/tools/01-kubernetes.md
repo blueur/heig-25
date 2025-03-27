@@ -1,19 +1,19 @@
 # Kubernetes
 
-:::danger[Work in progress]
-
-Le cluster du cours n'est pas encore prêt.
-
-:::
-
 ## Cluster du cours
 
 Il faut être sur le réseau de l'HEIG-VD pour accéder au cluster Kubernetes du cours.  
 Au besoin, utiliser un VPN : https://vpn.heig-vd.ch
 
 - Rancher : https://rancher.k8s.heig-vd.blueur.com
+  - Se connecter avec le compte GitHub
+    - Attendre l'ajout manuel des permissions
+  - Sélectionner le cluster `heig-vd-dop-k8s`
 - ArgoCD : https://argocd.k8s.heig-vd.blueur.com
 - Dashboard : https://dashboard.k8s.heig-vd.blueur.com
+  - Pour obtenir le token de connexion :
+    - Ouvrir le Kubectl Shell sur Rancher
+    - Exécuter `kubectl create token default`
 
 ### Kubectl
 
