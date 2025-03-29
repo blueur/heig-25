@@ -31,3 +31,28 @@
 - Le Makefile doit être juste un raccourci des commandes.
 - Les variables d'environnements sont à mettre dans un fichier .env.
 - Les données de connection à la base de données ne doivent pas être en dur dans le back
+
+# 04 CI/CD
+
+- Les dernières pipelines ne passent pas.
+- Le rapport des unit tests ne sont pas envoyés à GitLab.
+- Les stages utilisés par les `include` doivent être présents dans le fichier principal (soit par défaut, soit explicite). Par exemple :
+  - Dependency Scanning utilise `test` : https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.gitlab-ci.yml
+  - SAST utilise `test` : https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/SAST.gitlab-ci.yml
+- Les `include` de GitLab se trouvent sur https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates/Jobs
+
+# 05 Kubernetes
+
+- Le frontend n'arrive pas à se connecter au backend (vérifier le chemin du backend).
+
+# 06 CI/CD Java
+
+# 07 Helm
+
+# 08 Logs
+
+# 09 Métriques
+
+# 10 Traces
+
+# 11 Observabilité

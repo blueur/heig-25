@@ -183,7 +183,7 @@ Créer une pipeline sur GitLab CI/CD qui :
 
 - a les 3 stages :
   - build : vérifie que le code compile.
-  - test :
+  - test (autant que possible parmi les éléments suivants) :
     - vérifie que les tests (du backend) passent.
     - [Unit Test Reports](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html)
     - [Code Coverage](https://docs.gitlab.com/ee/ci/testing/code_coverage.html)
@@ -196,7 +196,7 @@ Créer une pipeline sur GitLab CI/CD qui :
   - le stage `deploy` n'est exécuté que sur `main`.
 - Le frontend et le backend doivent être dans des jobs séparés et en parallèle.
   - Chacun est exécuté uniquement lorsqu'il y a des changements dans son dossier.
-    - [Parent-child pipelines ](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#parent-child-pipelines)
+    - [Parent-child pipelines](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#parent-child-pipelines)
 
 #### Proposition
 
@@ -375,7 +375,7 @@ deploy-backend:
 - Transformer votre pipeline en [Directed Acyclic Graph Pipelines](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#directed-acyclic-graph-pipelines).
 - Transformer votre pipeline en [Parent-child pipelines](https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#parent-child-pipelines).
 - [Optimisez vos fichiers YAML](https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html)
-- Ajouter et configurer
+- Ajouter et configurer (autant que possible) les éléments suivants :
   - [Code Quality](https://docs.gitlab.com/ee/ci/testing/code_quality.html)
   - [Dependency Scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)
   - [SAST](https://docs.gitlab.com/ee/user/application_security/sast/)
