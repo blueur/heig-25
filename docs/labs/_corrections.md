@@ -35,6 +35,7 @@
 # 04 CI/CD
 
 - Les dernières pipelines ne passent pas.
+- Il doit avoir au moins la CI pour le frontend et le backend.
 - Le rapport des unit tests ne sont pas envoyés à GitLab.
 - Les stages utilisés par les `include` doivent être présents dans le fichier principal (soit par défaut, soit explicite). Par exemple :
   - Dependency Scanning utilise `test` : https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.gitlab-ci.yml

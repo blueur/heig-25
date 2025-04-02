@@ -33,7 +33,7 @@
 ### Prérequis
 
 - [Maven](https://maven.apache.org/)
-- [Java 17](https://adoptium.net/fr/temurin/releases/?version=17)
+- [Java 17](https://adoptium.net/fr/temurin/releases/?version=17) (ou supérieur)
 
 ### Préparation
 
@@ -49,7 +49,7 @@
 - Conteneuriser l'application avec Docker.
   - Quelle image de base ? Pourquoi ?
   - Utiliser la version 17 de Java.
-- Configurer Docker Compose de sorte que `docker compose up` lance l'application.
+- Configurer Docker Compose de sorte que `docker compose up` lance l'application sur une nouvelle machine.
 - Configurer la CI/CD sur GitLab.
   - Pour chaque commit sur n'importe quelle branche :
     - Vérifier que le projet compile.
@@ -65,18 +65,29 @@
 
 - Indiquer dans votre rapport votre démarche ainsi que les difficultés rencontrées.
 - Expliquer tous les choix techniques que vous avez fait (sauf ceux indiqués).
+  -Expliquer comment utiliser les outils de CI/CD dans GitLab (unit test report, code coverage, SAST, ...).
 
 ## Evaluation
 
-| Critère    | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.15)                                                             | Excellent (+0.3)                     |
-| ---------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------ |
-| Délai      | Le rendu est dans les temps                                                                     |                                                                         |                                      |
-| Rapport    | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                |                                      |
-| Docker     | Le Docker Compose est fonctionnel avec `docker compose up`                                      | Application des bonnes pratiques                                        | Optimisation                         |
-| CI/CD      | La pipeline CI/CD est fonctionnel (succès)                                                      | Conditions correctes                                                    | Application des bonnes pratiques     |
-| Kubernetes | Le déploiement sur Kubernetes est fonctionnel grâce au fichier `deployment.yaml` (pas d'erreur) | Déployé sur le cluster k8s de la classe sous le namespace `{votre nom}` | Application des bonnes pratiques     |
-| Code       | Le code est fonctionnel                                                                         | Le code est propre                                                      | Le code est propre et bien documenté |
-| Test       |                                                                                                 | Amélioration de la CI/CD avec l'unit test report                        | Explication de son utilisation       |
-| Coverage   |                                                                                                 | Amélioration de la CI/CD avec le code coverage                          | Explication de son utilisation       |
-| SAST       |                                                                                                 | Amélioration de la CI/CD avec le SAST                                   | Explication de son utilisation       |
-| Bonus      |                                                                                                 | Toute autre amélioration                                                | Toute autre amélioration avancée     |
+L'évaluation se porte sur les critères suivants :
+
+- Organisation
+  - [ ] **La Merge Request est correctement créée et dans les temps.**
+  - [ ] **Le rapport est complet et synthétique.**
+- Docker
+  - [ ] **Le Docker Compose est fonctionnel.**
+  - [ ] _Les bonnes pratiques sont appliquées pour Docker & Docker Compose._
+- CI/CD
+  - [ ] **La pipeline CI/CD est fonctionnelle.**
+  - [ ] _Fonctionnalités supplémentaires pour la CI/CD (code coverage, SAST, ...)._
+  - [ ] _Les bonnes pratiques sont appliquées pour la CI/CD._
+- Kubernetes
+  - [ ] **Le déploiement Kubernetes est fonctionnel.**
+  - [ ] _Les bonnes pratiques sont appliquées pour Kubernetes._
+
+|            Note            | &nbsp;1&nbsp; | &nbsp;2&nbsp; | 2.5 | &nbsp;3&nbsp; | 3.5 | &nbsp;4&nbsp; | 4.5 | &nbsp;5&nbsp; | 5.5 | &nbsp;6&nbsp; |
+| :------------------------: | :-----------: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: |
+| Nombre de critères validés |       0       |       1       |  2  |       3       |  4  |       5       |  6  |       7       |  8  |       9       |
+
+- **En gras** : critères principaux.
+- _En italique_ : critères secondaires.
