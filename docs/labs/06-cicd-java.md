@@ -13,7 +13,7 @@
   - GitHub Classroom : https://classroom.github.com/a/5QPDBsHu
   - Nom du fichier : `report.md` à la racine du répertoire
   - Avec le lien vers la Merge Request GitLab
-- Délai: 1 semaine
+- Délai: 2 semaines
 - **Laboratoire noté**
 
 ## Tâches

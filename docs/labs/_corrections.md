@@ -45,6 +45,8 @@
 # 05 Kubernetes
 
 - Le frontend n'arrive pas à se connecter au backend (vérifier le chemin du backend).
+- Les labels ne sont pas les mêmes entre le déploiement et le pod.
+- Les labels ne sont pas les mêmes entre le service et le pod.
 
 # 06 CI/CD Java
 
