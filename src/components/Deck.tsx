@@ -26,11 +26,15 @@ export function Code(
   props: PropsWithChildren<{
     fragment?: boolean;
     lines?: string;
+    height?: string;
   }>,
 ) {
   const unindented = trimIndentation(props.children.toString());
   return (
-    <pre className={clsx({ fragment: props.fragment })}>
+    <pre
+      className={clsx({ fragment: props.fragment })}
+      style={{ height: props.height }}
+    >
       <code data-trim data-noescape data-line-numbers={props.lines ?? true}>
         {unindented}
       </code>
@@ -177,7 +181,9 @@ export function Section(
 export function Table(props: {
   fragment?: boolean | number;
   headers?: string[];
-  lines: (string | ReactElement)[][];
+  rows: (string | ReactElement)[][];
+  rowHeaders?: string[];
+  columnFixed?: boolean;
 }) {
   return (
     <table
@@ -187,6 +193,11 @@ export function Table(props: {
       data-fragment-index={
         typeof props.fragment === "number" ? props.fragment : undefined
       }
+      style={{
+        display: "table",
+        tableLayout: props.columnFixed ? "fixed" : undefined,
+        width: props.columnFixed ? "100%" : undefined,
+      }}
     >
       {props.headers ? (
         <thead>
@@ -203,9 +214,14 @@ export function Table(props: {
         </thead>
       ) : undefined}
       <tbody>
-        {props.lines.map((line, index) => (
+        {props.rows.map((row, index) => (
           <tr key={index}>
-            {line.map((item, index) => (
+            {props.rowHeaders ? (
+              <th style={{ textAlign: "left", padding: "0em 1em" }}>
+                <Text>{props.rowHeaders[index]}</Text>
+              </th>
+            ) : undefined}
+            {row.map((item, index) => (
               <td
                 key={index}
                 style={{
