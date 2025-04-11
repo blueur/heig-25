@@ -50,7 +50,27 @@
 
 # 06 CI/CD Java
 
+- Pourquoi eclipse-temurin ou openjdk comme base image ?
+- Pas besoin du code source dans l'image finale.
+- Numéro de version de l'application hardcodé dans le Dockerfile.
+- Numéro de version de Java ou Maven trop ou pas assez précis.
+- JRE dans l'image finale.
+- Le .jar doit être build par Docker.
+- Pas alpine.
+- Pas besoin de Maven dans l'image finale.
+- Le job de test dans la pipeline rebuild entièrement l'application. Peut être utiliser un cache ?
+- Les jobs de test et de build re-téléchargent les dépendances Maven. Peut être utiliser un cache ?
+- Unit test report non fonctionnel.
+- Coverage report non fonctionnel.
+
 # 07 Helm
+
+- Lors de la reprise d'un template, commencer par le nettoyer des éléments non nécessaires.
+- Les limitations de ressources minimales indiquent une réservation.
+- Les limitations de ressources maximales indiquent un quota.
+- Quelles sont les stratégies de déploiement disponibles dans Kubernetes ?
+- Réponses plus synthétiques et plus naturelles.
+- Possible de séparer les définitions dans plusieurs fichiers avec Helm pour améliorer la lisibilité.
 
 # 08 Logs
 
@@ -59,3 +79,14 @@
 # 10 Traces
 
 # 11 Observabilité
+
+- Pourquoi eclipse-temurin ou openjdk comme base image ?
+- Pas besoin du code source dans l'image finale.
+- Numéro de version de l'application hardcodé dans le Dockerfile.
+- Numéro de version de Java ou Maven trop ou pas assez précis.
+- JRE dans l'image finale.
+- Le .jar doit être build par Docker.
+- Pas alpine.
+- Pas besoin de Maven dans l'image finale.
+- Séparer le rapport du labo (report.md) avec l'utilisation de l'application (readme.md).
+- Comment lancer les services ?
