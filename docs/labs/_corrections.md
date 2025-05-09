@@ -74,7 +74,13 @@
 
 # 08 Logs
 
+- Les logs sont bien parsés sur Kibana.
+- Au moins voir les logs dans Kibana (parsing d'Apache pas essentiel).
+- Création de graphiques sur Kibana.
+
 # 09 Métriques
+
+- Vérifier la compréhension du fonctionnement de Prometheus.
 
 # 10 Traces
 
