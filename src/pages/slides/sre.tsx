@@ -1,4 +1,4 @@
-import { List, Section, Text } from "@site/src/components/Deck";
+import { Image, List, Section, Text } from "@site/src/components/Deck";
 import RevealDeck from "@site/src/components/RevealDeck";
 
 export default function Sre(props: { embedded?: boolean }) {
@@ -71,6 +71,12 @@ export default function Sre(props: { embedded?: boolean }) {
             "**Carrière stagnante** : pas de temps pour apprendre/évoluer",
             "**Moral bas** : chacun·e a une limite de labeurs supportables",
           ]}
+        />
+      </Section>
+      <Section level={3} title="Dette technique">
+        <Image
+          src="https://www.monkeyuser.com/2018/tech-debt/106-tech-debt.png"
+          url="https://www.monkeyuser.com/2018/tech-debt/"
         />
       </Section>
       <Section
