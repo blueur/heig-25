@@ -51,7 +51,7 @@ Suivre le scénario suivant : https://opentelemetry.io/docs/demo/scenarios/recom
 
 ### Instrumenter FastAPI (+ PostgreSQL)
 
-Reprendre le projet [HEIG-VD DevOps](https://gitlab.com/blueur/heig-vd-devops) et instrumenter le backend avec OpenTelemetry
+Reprendre votre projet [DOP Python](https://gitlab.com/blueur/heig-vd-devops) et instrumenter le backend avec OpenTelemetry
 
 - Ajouter les dépendances suivantes : `poetry add opentelemetry-instrumentation-fastapi opentelemetry-exporter-otlp`
   - [opentelemetry-instrumentation-fastapi](https://opentelemetry-python-contrib.readthedocs.io/en/latest/instrumentation/fastapi/fastapi.html) pour automatiquement instrumenter FastAPI

@@ -98,17 +98,29 @@ Bonus :
 
 ## Evaluation
 
-|                           | Critères de base (-0.5/critère)                                             | Critères complémentaires (+0.2/critère)                                                                                              |
-| ------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Rendu                     | <ul><li>Le rendu est complet et dans les temps</li></ul>                    |                                                                                                                                      |
-| Docker                    | <ul><li>Le Docker Compose est fonctionnel</li></ul>                         | <ul><li>Bonne dockerisation</li><li>Utilisation des profiles</li></ul>                                                               |
-| Logs                      | <ul><li>Visualisation des logs de l'application dans Kibana</li></ul>       | <ul><li>Ajout des logs de tous les services</li><li>Stacktraces regroupées</li><li>Dashboard</li></ul>                               |
-| Métriques                 | <ul><li>Visualisation des métriques de l'application dans Grafana</li></ul> | <ul><li>Ajout des métriques de tous les services</li><li>Gauge</li><li>Sums</li><li>Autre</li></ul>                                  |
-| Traces                    | <ul><li>Visualisation des traces de l'application dans Jaeger</li></ul>     | <ul><li>Ajout des traces de tous les services</li><li>Visualisation des traces dans Zipkin</li><li>Comparaison avec Zipkin</li></ul> |
-| Documentation (README.md) | <ul><li>Documentation des configurations manuelles</li></ul>                | <ul><li>Bonne documentation de l'application</li><li>Bonne documentation des APM</li></ul>                                           |
-| Rapport                   |                                                                             | <ul><li>Bonne explication de la démarche</li><li>Bonne explication des choix techniques</li></ul>                                    |
-| Bonus                     |                                                                             | <ul><li>Autre bonus</li></ul>                                                                                                        |
+L'évaluation se porte sur les critères suivants :
 
-Tous les critères de base doivent être validés pour avoir la note de 4.
+- Organisation
+  - [ ] **La Merge Request est correctement créée et dans les temps.**
+  - [ ] **Documentation (README.md) des configurations manuelles, de l'application et des APMs.**
+  - [ ] _Le rapport (report.md) est complet (explication de la démarche et des choix techniques) et synthétique._
+- Docker
+  - [ ] **Bonne dockerisation & Utilisation des profiles**
+- Logs
+  - [ ] **Visualisation des logs de l'application dans Kibana.**
+  - [ ] _Ajout des logs de tous les services & Stacktraces regroupées & Dashboard_
+- Métriques
+  - [ ] **Visualisation des métriques de l'application dans Grafana.**
+  - [ ] _Ajout des métriques de tous les services & Gauge, Sums, &hellip;_
+- Traces
+  - [ ] **Visualisation des traces de l'application dans Jaeger.**
+  - [ ] _Ajout des traces de tous les services & Visualisation des traces dans Zipkin & Comparaison avec Zipkin_
+- Bonus
+  - [ ] _Autre bonus_
 
-Les critères complémentaires permettent d'atteindre la note de 6.
+|            Note            | &nbsp;1&nbsp; | 1.5 | &nbsp;2&nbsp; | 2.5 | &nbsp;3&nbsp; | 3.5 | &nbsp;4&nbsp; | 4.5 | &nbsp;5&nbsp; | 5.5 | &nbsp;6&nbsp; |
+| :------------------------: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: | :-: | :-----------: |
+| Nombre de critères validés |       0       |  1  |       2       |  3  |       4       |  5  |       6       |  7  |       8       |  9  |      10       |
+
+- **En gras** : critères principaux.
+- _En italique_ : critères secondaires.
