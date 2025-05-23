@@ -46,9 +46,6 @@ http://localhost:8080
 - Dockeriser l'application
 - Créer un Docker Compose pour lancer l'application
   - `docker compose up`
-
-Bonus :
-
 - Utiliser les [profiles](https://docs.docker.com/compose/profiles/) pour activer/désactiver les outils APM
 
 ### Instrumentation
@@ -101,7 +98,7 @@ Bonus :
 L'évaluation se porte sur les critères suivants :
 
 - Organisation
-  - [ ] **La Merge Request est correctement créée et dans les temps.**
+  - [ ] **Le rendu est correct et dans les temps.**
   - [ ] **Documentation (README.md) des configurations manuelles, de l'application et des APMs.**
   - [ ] _Le rapport (report.md) est complet (explication de la démarche et des choix techniques) et synthétique._
 - Docker
