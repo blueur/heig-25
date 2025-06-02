@@ -15,9 +15,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/faster": "^3.7.0",
-    "@docusaurus/preset-classic": "^3.7.0",
+    "@docusaurus/faster": "^3.8.0",
+    "@docusaurus/preset-classic": "^3.8.0",
     "@fontsource-variable/inconsolata": "^5.2.5",
     "@mdx-js/react": "^3.1.0",
     "@phosphor-icons/web": "^2.1.2",
@@ -31,9 +30,7 @@
     "reveal.js": "^5.2.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.7.0",
-    "@docusaurus/tsconfig": "^3.7.0",
-    "@docusaurus/types": "^3.7.0",
+    "@docusaurus/tsconfig": "^3.8.0",
     "@types/reveal.js": "^5.0.5",
     "prettier-plugin-organize-imports": "^4.1.0",
     "typescript": "^5.8.3"
