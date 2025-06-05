@@ -82,6 +82,11 @@ const config: Config = {
           className: "ph ph-gitlab-logo-simple",
         },
         {
+          href: "https://www.instagram.com/blueur.ii/",
+          position: "right",
+          className: "ph ph-instagram-logo",
+        },
+        {
           href: "https://www.linkedin.com/in/davidtangch/",
           position: "right",
           className: "ph ph-linkedin-logo",
