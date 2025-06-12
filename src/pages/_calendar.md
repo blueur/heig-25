@@ -17,4 +17,4 @@
 |   2025-05-30    |   14    | _Ascension_                                                                                      | _Ascension_                                                                             |
 |   2025-06-06    |   15    | [Ingénierie de la fiabilité des sites](/docs/lessons/sre)                                        | [Observabilité](/docs/labs/observability) (**noté**)                                    |
 |   2025-06-13    |   16    | [Présentation](/docs/presentation) (**noté**)                                                    | Révision                                                                                |
-|   2025-06-26    |         | **Examen écrit** en J03 (09:25-10:25)                                                            |                                                                                         |
+|   2025-06-26    |         | [Examen écrit](/docs/exam) (**noté**) en J03 (09:25-10:25)                                       |                                                                                         |
