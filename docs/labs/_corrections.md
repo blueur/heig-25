@@ -84,6 +84,9 @@
 
 # 10 Traces
 
+- Différencier pull et push
+- Les traces sont bien envoyées à Jaeger.
+
 # 11 Observabilité
 
 - Pourquoi eclipse-temurin ou openjdk comme base image ?
