@@ -8,7 +8,7 @@ const config: Config = {
   tagline: "Cours de DevOps à la HEIG-VD",
   favicon: "img/favicon.ico",
 
-  url: "https://heig.davidtang.ch",
+  url: "https://heig-25.davidtang.ch",
   baseUrl: "/",
 
   i18n: {
@@ -99,7 +99,7 @@ const config: Config = {
       ],
     },
     footer: {
-      copyright: `<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://heig.davidtang.ch/" target="_blank">DOP</a> © 2025 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://davidtang.ch" target="_blank">David Tang</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</a></div>`,
+      copyright: `<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://heig-25.davidtang.ch/" target="_blank">DOP</a> © 2025 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://davidtang.ch" target="_blank">David Tang</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</a></div>`,
     },
     docs: {
       sidebar: {
