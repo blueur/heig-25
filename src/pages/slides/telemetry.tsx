@@ -29,7 +29,7 @@ export default function Telemetry(props: { embedded?: boolean }) {
             "**Alerting** sur les données",
             [
               "Utilisation d'un **APM** (Application Performance Monitoring)",
-              ["**Outils** de télémétrie pour les applications"],
+              ["**Outils** de télémesure pour les applications"],
             ],
           ]}
         />
@@ -38,8 +38,8 @@ export default function Telemetry(props: { embedded?: boolean }) {
         <List
           fragment
           items={[
-            "**Standard** open source des données de télémétrie (observabilité)",
-            "**Compatibilité** et **Interopérabilité** entre les outils de télémétrie",
+            "**Standard** open source des données de télémesure (observabilité)",
+            "**Compatibilité** et **Interopérabilité** entre les outils de télémesure",
             "**Facilite** l'instrumentation des applications",
           ]}
         />
